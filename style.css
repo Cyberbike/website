@@ -43,7 +43,7 @@ nav a {
 
 .centered-text {
   position: absolute;
-  top: 50%;
+  top: 20%; /* Move the text up 30% from its previous position */
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -74,4 +74,29 @@ form button {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+
+  .centered-text {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 1em;
+  }
 }
