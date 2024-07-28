@@ -145,3 +145,36 @@ footer .fa:hover {
     margin: 1em 0;
   }
   
+
+  table {
+    border-collapse: collapse;
+    width: 30%;
+    /* height:120%; */
+    text-align: center;
+}
+
+th, td {
+    border: none; /* This removes the border from the table cells */
+  /* padding: 8px; */
+    text-align: center;
+
+    padding-top: 4px; /* Extra padding for vertical spacing */
+    padding-bottom:4px; /* Extra padding for vertical spacing */
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 33%; /* Adjust the percentage as needed */
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 33%; /* Adjust the percentage as needed */
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 33%; /* Adjust the percentage as needed */
+}
