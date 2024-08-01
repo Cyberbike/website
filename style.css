@@ -178,38 +178,37 @@ th:nth-child(3), td:nth-child(3) {
 
 /* For mobile devices */
 @media only screen and (max-width: 600px) {
-    table {
-        width: 100%;
-    }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
 
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
+  thead {
+      display: none;
+  }
 
-    thead tr {
-        display: none;
-    }
+  tr {
+      display: block;
+      margin-bottom: 1em;
+      border-bottom: 2px solid #ddd;
+  }
 
-    tr {
-        margin-bottom: 1em;
-        display: block;
-        border-bottom: 2px solid #ddd;
-    }
+  td {
+      display: block;
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+      border: none;
+  }
 
-    td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-        text-align: left;
-    }
-
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 10px;
-        font-weight: bold;
-        white-space: nowrap;
-    }
+  td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+      white-space: nowrap;
+  }
 }
